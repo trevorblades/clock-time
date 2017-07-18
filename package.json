@@ -1,6 +1,6 @@
 {
   "name": "clock-time",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Formats milliseconds or minutes and seconds as clock time",
   "scripts": {
     "pretest": "eslint index.js index.test.js",
