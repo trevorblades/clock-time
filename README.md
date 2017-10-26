@@ -6,28 +6,23 @@ Formats milliseconds or minutes and seconds as clock time
 
 ## Installation
 
-Install `clock-time` using your favourite package manager:
-
 ```
 npm install --save clock-time
 ```
 
-...or
-
-```
-yarn add clock-time
-```
-
 ## Usage
 
-You can pass milliseconds as a single argument
+Import or require the package and pass milliseconds as a single argument to get nicely formatted clock time.
 
 ```js
+import clockTime from 'clock-time'; // es6
+const clockTime = require('clock-time'); // cjs
+
 const text = clockTime(60 * 1000);
 // 1:00
 ```
 
-You can also pass the number of minutes as the first argument and the number of seconds as the second argument
+Or, pass the number of minutes as the first argument and the number of seconds as the second argument instead.
 
 ```js
 const text = clockTime(4, 20);

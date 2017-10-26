@@ -5,7 +5,7 @@
   "scripts": {
     "pretest": "eslint index.js index.test.js",
     "test": "jest",
-    "prepublish": "babel index.js --out-dir lib"
+    "prepare": "babel index.js --out-dir lib"
   },
   "main": "lib/index.js",
   "repository": "https://github.com/trevorblades/clock-time",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.2.0",
     "eslint-config-knoword": "^2.1.2",
     "jest": "^20.0.4"
