@@ -2,15 +2,10 @@
   "name": "clock-time",
   "version": "1.2.0",
   "description": "Formats milliseconds or minutes and seconds as clock time",
-  "scripts": {
-    "pretest": "eslint index.js index.test.js",
-    "test": "jest",
-    "prepare": "babel index.js --out-dir lib"
-  },
-  "main": "lib/index.js",
-  "repository": "https://github.com/trevorblades/clock-time",
   "author": "Trevor Blades <tdblades@gmail.com>",
+  "repository": "github:trevorblades/clock-time",
   "license": "MIT",
+  "main": "lib/index.js",
   "keywords": [
     "clock",
     "time",
@@ -20,15 +15,34 @@
     "format",
     "formatter"
   ],
+  "scripts": {
+    "pretest": "xo",
+    "test": "ava",
+    "prepare": "babel src --out-dir lib --ignore=**/test.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  },
   "dependencies": {
     "left-pad": "^1.1.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-jest": "^20.0.3",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.2.0",
-    "eslint-config-knoword": "^2.1.2",
-    "jest": "^20.0.4"
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "ava": "^1.0.0-beta.3",
+    "xo": "^0.20.3"
   }
 }

@@ -1,3 +1,0 @@
-extends: knoword
-env:
-  jest: true

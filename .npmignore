@@ -1,6 +1,3 @@
-.babelrc
-.eslintrc
-circle.yml
 index.js
-index.test.js
-yarn.lock
+test.js
+circle.yml
