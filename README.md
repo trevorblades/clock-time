@@ -1,13 +1,15 @@
 # Clock time
 
 [![CircleCI](https://circleci.com/gh/trevorblades/clock-time.svg?style=shield&circle-token=61b9155b46620cdaac0b9b712e5934cb041164f3)](https://circleci.com/gh/trevorblades/clock-time)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 Formats milliseconds or minutes and seconds as clock time
 
 ## Installation
 
 ```
-npm install --save clock-time
+npm install clock-time
 ```
 
 ## Usage
