@@ -1,5 +1,5 @@
 import test from 'ava';
-import clockTime from '.';
+import clockTime from './main';
 
 test('formats milliseconds as clock time', t =>
   t.is(clockTime(260000), '4:20'));

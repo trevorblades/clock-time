@@ -5,7 +5,7 @@
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "github:trevorblades/clock-time",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/main.js",
   "keywords": [
     "clock",
     "time",
@@ -18,11 +18,16 @@
   "scripts": {
     "pretest": "xo",
     "test": "ava",
-    "prepare": "babel index.js --out-dir lib"
+    "prepare": "babel main.js --out-dir lib"
   },
   "babel": {
     "presets": [
-      "@babel/env"
+      [
+        "@babel/env",
+        {
+          "useBuiltIns": "usage"
+        }
+      ]
     ]
   },
   "xo": {
@@ -33,9 +38,6 @@
     "require": [
       "@babel/register"
     ]
-  },
-  "dependencies": {
-    "left-pad": "^1.1.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.42",

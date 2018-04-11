@@ -1,5 +1,3 @@
-import leftPad from 'left-pad';
-
 export default (...args) => {
   let minutes = args[0];
   let seconds = args[1];
@@ -11,5 +9,5 @@ export default (...args) => {
     seconds = time.getSeconds();
   }
 
-  return `${minutes}:${leftPad(seconds, 2, 0)}`;
+  return `${minutes}:${seconds.toString().padStart(2, 0)}`;
 };
