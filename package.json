@@ -17,27 +17,14 @@
   ],
   "scripts": {
     "pretest": "xo",
-    "test": "ava",
-    "prepare": "webpack"
+    "test": "ava"
   },
   "xo": {
     "space": true,
     "prettier": true
   },
-  "ava": {
-    "require": [
-      "@babel/register"
-    ]
-  },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.42",
-    "@babel/core": "^7.0.0-beta.42",
-    "@babel/preset-env": "^7.0.0-beta.42",
-    "@babel/register": "^7.0.0-beta.42",
     "ava": "^1.0.0-beta.3",
-    "babel-loader": "^8.0.0-beta.2",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14",
     "xo": "^0.20.3"
   }
 }
