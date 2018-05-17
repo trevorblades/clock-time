@@ -5,7 +5,6 @@
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "github:trevorblades/clock-time",
   "license": "MIT",
-  "main": "lib/main.js",
   "keywords": [
     "clock",
     "time",
