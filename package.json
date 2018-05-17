@@ -1,6 +1,6 @@
 {
   "name": "clock-time",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "description": "Formats milliseconds or minutes and seconds as clock time",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "github:trevorblades/clock-time",
