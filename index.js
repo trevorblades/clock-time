@@ -1,13 +1,13 @@
 module.exports = function() {
-  let minutes = arguments[0];
-  let seconds = arguments[1];
+  var minutes = arguments[0];
+  var seconds = arguments[1];
   if (arguments.length === 1) {
     // If only one arg is passed, it's in milliseconds and must be converted to
     // minutes and seconds
-    const time = new Date(arguments[0]);
+    var time = new Date(arguments[0]);
     minutes = time.getMinutes();
     seconds = time.getSeconds();
   }
 
-  return `${minutes}:${seconds.toString().padStart(2, 0)}`;
+  return [minutes, ('0' + seconds).slice(-2)].join(':');
 };
