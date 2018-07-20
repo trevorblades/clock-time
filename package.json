@@ -15,15 +15,12 @@
     "formatter"
   ],
   "scripts": {
-    "pretest": "xo",
-    "test": "ava"
-  },
-  "xo": {
-    "space": true,
-    "prettier": true
+    "pretest": "eslint ./",
+    "test": "jest"
   },
   "devDependencies": {
-    "ava": "^1.0.0-beta.3",
-    "xo": "^0.20.3"
+    "@knoword/eslint-config": "^6.11.0",
+    "eslint": "^5.1.0",
+    "jest": "^23.4.1"
   }
 }

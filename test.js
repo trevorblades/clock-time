@@ -1,10 +1,13 @@
-import test from 'ava';
-import clockTime from '.';
+const clockTime = require('.');
 
-test('formats milliseconds as clock time', t =>
-  t.is(clockTime(260000), '4:20'));
+test('formats milliseconds as clock time', () => {
+  expect(clockTime(260000)).toBe('4:20');
+});
 
-test('formats minutes and seconds as clock time', t =>
-  t.is(clockTime(4, 20), '4:20'));
+test('formats minutes and seconds as clock time', () => {
+  expect(clockTime(4, 20)).toBe('4:20');
+});
 
-test('pad seconds with zeros', t => t.is(clockTime(12, 4), '12:04'));
+test('pad seconds with zeros', () => {
+  expect(clockTime(12, 4)).toBe('12:04');
+});
