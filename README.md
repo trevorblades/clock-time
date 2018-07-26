@@ -1,4 +1,4 @@
-# Clock time
+# clock-time
 
 [![CircleCI](https://circleci.com/gh/trevorblades/clock-time.svg?style=shield)](https://circleci.com/gh/trevorblades/clock-time)
 
