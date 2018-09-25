@@ -1,4 +1,4 @@
-# clock-time
+# Clock Time
 
 [![CircleCI](https://circleci.com/gh/trevorblades/clock-time.svg?style=shield)](https://circleci.com/gh/trevorblades/clock-time)
 
@@ -6,8 +6,8 @@ Formats milliseconds or minutes and seconds as clock time
 
 ## Installation
 
-```
-npm install clock-time
+```shell
+$ npm install clock-time
 ```
 
 ## Usage

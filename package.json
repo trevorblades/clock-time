@@ -3,7 +3,7 @@
   "version": "2.2.1",
   "description": "Formats milliseconds or minutes and seconds as clock time",
   "author": "Trevor Blades <tdblades@gmail.com>",
-  "repository": "github:trevorblades/clock-time",
+  "repository": "trevorblades/clock-time",
   "license": "MIT",
   "keywords": [
     "clock",
