@@ -1,6 +1,6 @@
 # Clock Time
 
-[![CircleCI](https://circleci.com/gh/trevorblades/clock-time.svg?style=shield)](https://circleci.com/gh/trevorblades/clock-time)
+[![Build Status](https://travis-ci.com/trevorblades/clock-time.svg?branch=master)](https://travis-ci.com/trevorblades/clock-time)
 
 Formats milliseconds or minutes and seconds as clock time
 
