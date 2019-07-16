@@ -19,8 +19,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@knoword/eslint-config": "^6.11.0",
-    "eslint": "^5.13.0",
-    "jest": "^23.4.1"
+    "@trevorblades/eslint-config": "^6.22.2",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0"
   }
 }

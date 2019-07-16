@@ -7,7 +7,7 @@ Formats milliseconds or minutes and seconds as clock time
 ## Installation
 
 ```shell
-$ npm install clock-time
+npm install clock-time
 ```
 
 ## Usage
@@ -25,4 +25,22 @@ Or, pass the number of minutes as the first argument and the number of seconds a
 
 ```js
 clockTime(4, 20); // 4:20
+```
+
+### `toClockParts`
+
+Use the named export `toClockParts` to convert milliseconds to an object of minutes, zero-padded seconds, and total seconds. This can be useful when you want to use the parts of a clock time separately or in addition to the formatted string.
+
+`toClockParts` also accepts an object of options as a second argument. You can disable zero-padding on the returned `seconds` property by passing `{noPad: true}` to the function.
+
+```js
+import {toClockParts} from 'clock-time';
+
+const {
+  minutes, // 4
+  seconds, // 20
+  total // 260
+} = toClockParts(260000);
+
+const formatted = `${minutes}:${seconds}`; // or clockTime(minutes, seconds)
 ```
