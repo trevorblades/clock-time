@@ -13,7 +13,7 @@ test('pad seconds with zeros', () => {
 });
 
 test('breaks apart milliseconds into parts', () => {
-  expect(toClockParts(260000)).toMatchObject({
+  expect(toClockParts(260000)).toEqual({
     minutes: 4,
     seconds: '20',
     total: 260
@@ -21,7 +21,7 @@ test('breaks apart milliseconds into parts', () => {
 });
 
 test('clock parts works without zero-padding', () => {
-  expect(toClockParts(242000, {noPad: true})).toMatchObject({
+  expect(toClockParts(242000, {noPad: true})).toEqual({
     minutes: 4,
     seconds: 2,
     total: 242
