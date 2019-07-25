@@ -15,12 +15,16 @@
     "formatter"
   ],
   "scripts": {
-    "pretest": "eslint ./",
-    "test": "jest"
+    "pretest": "eslint src/*",
+    "test": "jest",
+    "prepare": "tsc"
   },
   "devDependencies": {
-    "@trevorblades/eslint-config": "^6.22.2",
+    "@trevorblades/eslint-config": "^7.0.0",
+    "@types/jest": "^24.0.15",
     "eslint": "^6.0.1",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
   }
 }

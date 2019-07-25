@@ -31,7 +31,7 @@ clockTime(4, 20); // 4:20
 
 Use the named export `toClockParts` to convert milliseconds to an object of minutes, zero-padded seconds, and total seconds. This can be useful when you want to use the parts of a clock time separately or in addition to the formatted string.
 
-`toClockParts` also accepts an object of options as a second argument. You can disable zero-padding on the returned `seconds` property by passing `{noPad: true}` to the function.
+If the second argument to `toClockParts` is `true`, zero-padding on the returned `seconds` property will be disabled and `seconds` will be a number.
 
 ```js
 import {toClockParts} from 'clock-time';

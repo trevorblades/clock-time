@@ -1,6 +1,3 @@
 {
-  "extends": "@trevorblades",
-  "env": {
-    "jest": true
-  }
+  "extends": "@trevorblades/eslint-config/typescript"
 }
