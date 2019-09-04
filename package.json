@@ -14,15 +14,18 @@
     "format",
     "formatter"
   ],
+  "eslintConfig": {
+    "extends": "@trevorblades/eslint-config/typescript"
+  },
   "scripts": {
     "pretest": "eslint src/*",
     "test": "jest",
     "prepare": "tsc"
   },
   "devDependencies": {
-    "@trevorblades/eslint-config": "^7.0.0",
+    "@trevorblades/eslint-config": "^7.0.1",
     "@types/jest": "^24.0.15",
-    "eslint": "^6.0.1",
+    "eslint": "^6.3.0",
     "jest": "^24.8.0",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
