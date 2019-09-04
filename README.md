@@ -1,6 +1,6 @@
 # Clock Time
 
-[![Build Status](https://travis-ci.com/trevorblades/clock-time.svg?branch=master)](https://travis-ci.com/trevorblades/clock-time)
+[![Build Status](https://github.com/trevorblades/gatsby-remark-typescript/workflows/Node%20CI/badge.svg)](https://github.com/trevorblades/gatsby-remark-typescript/actions)
 
 Formats milliseconds or minutes and seconds as clock time
 
