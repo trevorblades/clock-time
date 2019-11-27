@@ -12,7 +12,7 @@ npm install clock-time
 
 ## Usage
 
-Import or require the package and pass milliseconds as a single argument to get nicely formatted clock time.
+Import or `require` the package and pass milliseconds as a single argument to get nicely formatted clock time.
 
 ```js
 import clockTime from 'clock-time'; // es6
@@ -44,3 +44,7 @@ const {
 
 const formatted = `${minutes}:${seconds}`; // or clockTime(minutes, seconds)
 ```
+
+### License
+
+[MIT](./LICENSE)
