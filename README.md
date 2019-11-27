@@ -45,6 +45,6 @@ const {
 const formatted = `${minutes}:${seconds}`; // or clockTime(minutes, seconds)
 ```
 
-### License
+## License
 
 [MIT](./LICENSE)
