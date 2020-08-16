@@ -21,7 +21,7 @@ export function toClockParts(ms: number, disablePadding?: boolean): ClockParts {
 
 const separator = ':';
 export function clockTime(ms: number, seconds?: number): string {
-  if (seconds) {
+  if (Number.isInteger(seconds)) {
     return ms + separator + padSeconds(seconds);
   }
 

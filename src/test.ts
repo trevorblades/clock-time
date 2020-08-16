@@ -7,6 +7,7 @@ test('formats milliseconds as clock time', (): void => {
 
 test('formats minutes and seconds as clock time', (): void => {
   expect(clockTime(4, 20)).toBe('4:20');
+  expect(clockTime(1, 0)).toBe('1:00');
 });
 
 test('pad seconds with zeros', (): void => {
